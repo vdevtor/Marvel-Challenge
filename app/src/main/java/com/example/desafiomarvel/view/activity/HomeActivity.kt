@@ -37,14 +37,17 @@ class HomeActivity : AppCompatActivity() {
         binding.ivSpiderButton.setOnClickListener {
             hero = "Spider"
             setUpRecycle(1009610)
+
         }
         binding.ivThorButton.setOnClickListener {
             hero = "Thor"
             setUpRecycle(1009664)
+
         }
         binding.ivCaptainButton.setOnClickListener {
             hero = "Captain"
             setUpRecycle(1009220)
+
         }
 
     }
@@ -61,7 +64,7 @@ class HomeActivity : AppCompatActivity() {
                         intent.putExtra(KEY_INTENT_COMIC,it.data.results[position])
                         isClosed = true
                         startActivity(intent)
-                        Toast.makeText(this@HomeActivity,"cliquei",Toast.LENGTH_SHORT).show()
+
 
                     }
 

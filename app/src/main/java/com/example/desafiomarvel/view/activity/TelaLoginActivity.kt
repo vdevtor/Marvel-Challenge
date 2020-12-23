@@ -43,6 +43,7 @@ class TelaLoginActivity : AppCompatActivity() {
                      if (ck){
                     val i = Intent(this, HomeActivity::class.java)
                     startActivity(i)
+                         finish()
                 }
             }
             binding.btnCreatateAccount.setOnClickListener {

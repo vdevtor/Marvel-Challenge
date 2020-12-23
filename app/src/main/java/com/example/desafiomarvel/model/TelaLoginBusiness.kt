@@ -77,10 +77,9 @@ class TelaLoginBusiness {
         if (edtText != null) {
             if (edtText.text.toString() == email && edtTextSenha.text.toString() == senha) {
                 isokay = true
-                Toast.makeText(context, "Botão funcionando", Toast.LENGTH_SHORT).show()
+
                 validaEmail(edtText, btnLogin, edtTextSenha)
             } else if (isokay && edtText?.text.isNotBlank() && edtTextSenha.text.isNotBlank()) {
-                Toast.makeText(context, "Botão funcionando", Toast.LENGTH_SHORT).show()
                 btnLogin?.error = null
 
             } else if (isokay || edtText.text.isNotBlank() && edtTextSenha.text.isBlank()) {

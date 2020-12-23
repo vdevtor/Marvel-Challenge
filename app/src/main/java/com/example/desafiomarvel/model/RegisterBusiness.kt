@@ -68,7 +68,7 @@ class RegisterBusiness {
         var isokay2 = validaEmail(edtEmail, btnLogin, edtTextSenha,editName)
         if (edtEmail != null) {
             if (isokay2 && edtEmail?.text.isNotBlank() && edtTextSenha.text.isNotBlank() && editName.text.isNotBlank()) {
-                Toast.makeText(context, "Botão funcionando", Toast.LENGTH_SHORT).show()
+
                 btnLogin?.error = null
                 validaEmail(edtEmail, btnLogin, edtTextSenha,editName)
 
