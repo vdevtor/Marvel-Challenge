@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_marvel2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHome"
+        android:background="@color/white_marvel"
+        app:cardBackgroundColor="@color/white_marvel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="118dp"
+        android:layout_height="178dp"
+       >
+
+        <ImageView
+            android:layout_margin="4dp"
+            android:id="@+id/ivComicBook"
+            android:layout_width="110dp"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/spiderman"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvComicBook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="#97"
+            android:textColor="@color/white_marvel"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/cvHome"
+            app:layout_constraintTop_toBottomOf="@id/cvHome"
+
+          />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

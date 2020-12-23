@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_marvel2"
+    tools:context=".view.activity.TelaLoginActivity">
+
+    <FrameLayout
+        android:id="@+id/redLabelLogin"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/container_red_telalogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/whiteLabelLogin"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/container_telalogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Welcome to MARVEL's Hq"
+        android:fontFamily="@font/avengersfont"
+        android:textColor="@color/white_marvel"
+        android:textSize="15.8sp"
+        app:layout_constraintEnd_toEndOf="@id/redLabelLogin"
+        app:layout_constraintStart_toStartOf="@id/redLabelLogin"
+        app:layout_constraintTop_toTopOf="@id/redLabelLogin" />
+
+    <EditText
+        android:id="@+id/etEmailLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="13dp"
+        android:hint="Email"
+        android:focusable="true"
+        android:textColor="@color/blue_marvel"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/blue_marvel"
+        app:layout_constraintEnd_toEndOf="@id/whiteLabelLogin"
+        app:layout_constraintStart_toStartOf="@id/whiteLabelLogin"
+        app:layout_constraintTop_toTopOf="@id/whiteLabelLogin" />
+
+    <EditText
+        android:id="@+id/etSenhaLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="13dp"
+        android:hint="Password"
+        android:textColor="@color/blue_marvel"
+        android:inputType="textPassword"
+        android:textColorHint="@color/blue_marvel"
+        app:layout_constraintEnd_toEndOf="@id/whiteLabelLogin"
+        app:layout_constraintStart_toStartOf="@id/whiteLabelLogin"
+        app:layout_constraintTop_toBottomOf="@id/etEmailLogin"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cbLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:checked="true"
+        android:textSize="19dp"
+        android:textColor="@color/red_marvel"
+        android:text="Remember"
+        android:buttonTint="@color/red_marvel"
+        app:layout_constraintStart_toStartOf="@id/whiteLabelLogin"
+        app:layout_constraintTop_toBottomOf="@id/etSenhaLogin"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="14dp"
+        android:textColor="@color/white_marvel"
+        android:text="LOG IN"
+        android:fontFamily="@font/avengersfont"
+        android:textStyle="bold"
+        android:textSize="12.5dp"
+        android:backgroundTint="@color/red_marvel"
+        app:layout_constraintStart_toStartOf="@id/whiteLabelLogin"
+        app:layout_constraintEnd_toEndOf="@id/whiteLabelLogin"
+        app:layout_constraintTop_toBottomOf="@id/cbLogin"/>
+
+        <Button
+            android:id="@+id/btnCreatateAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:textSize="15dp"
+            android:backgroundTint="@color/white_marvel"
+            android:textColor="@color/blue_marvel"
+            android:text="Create account"
+            app:layout_constraintStart_toStartOf="@id/whiteLabelLogin"
+            app:layout_constraintEnd_toEndOf="@id/whiteLabelLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DesafioMarvel" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/blue_marvel</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.Spider" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/blue_marvel</item>
+        <item name="colorPrimaryVariant">@color/red_marvel</item>
+        <item name="colorOnPrimary">@color/blue_marvel</item>
+        <item name="colorSecondary">@color/blue_marvel</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.Spider2" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#CD1C1C</item>
+        <item name="colorPrimaryVariant">@color/red_marvel</item>
+        <item name="colorOnPrimary">@color/blue_marvel</item>
+        <item name="colorSecondary">@color/white_marvel</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="toolbarStyle">@style/my_Toolbar</item>
+    </style>
+
+    <style name="my_Toolbar" parent="@style/Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">@color/white_marvel </item>
+        <item name="android:windowTitleSize">25dp</item>
+    </style>
+
+  <style name="headerStyle">
+      <item name="android:textSize">33dp</item>
+      <item name="android:fontFamily">@font/avengersfont</item>
+      <item name="android:textStyle">bold</item>
+  </style>
+</resources>
